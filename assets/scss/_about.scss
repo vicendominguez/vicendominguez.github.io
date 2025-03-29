@@ -1,0 +1,50 @@
+.cyber-about {
+    width: 50%;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 2rem;
+    padding: 2rem;
+    background: rgba(10, 10, 10, 0.8);
+    border: 1px solid #FF00FF;
+    box-shadow: 0 0 20px rgba(0, 255, 255, 0.3);
+}
+
+
+.cyber-section {
+    padding: 0.7rem;
+    margin-bottom: 3rem;
+    border-left: 3px solid #00FFFF;
+    background: rgba(18, 18, 18, 0.6);
+}
+
+.cyber-feed {
+    font-family: 'Courier New', monospace;
+    max-height: 300px;
+    overflow-y: auto;
+    scrollbar-color: #00FFFF #121212;
+}
+
+.cyber-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 1.5rem;
+}
+
+.cyber-iframe {
+    border: 1px solid #FF00FF;
+    box-shadow: 0 0 10px rgba(0, 255, 255, 0.3);
+}
+
+@media (max-width: 1024px) {
+  .cyber-about {
+    width: 70%;
+  }
+}
+
+@media (max-width: 768px) {
+    .cyber-about {
+        width: 90%;
+        grid-template-columns: 1fr; /* Apilar columnas en móviles */
+    }
+}
