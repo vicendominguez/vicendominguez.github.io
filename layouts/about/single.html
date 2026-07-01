@@ -17,20 +17,8 @@
             </section>
 
             <section class="cyber-section">
-                <h2>> GITHUB_STATS</h2>
-              <a href="https://github.com/vicendominguez">
-                <img src="https://ghchart.rshah.org/00FFFF/vicendominguez" 
-                     alt="GitHub Contribution Chart" 
-                     class="cyber-iframe">
-              </a>
-              <br>
-              <img src="https://github-readme-stats-sigma-five.vercel.app/api?username=vicendominguez&show_icons=true&theme=tokyonight&hide_border=true&bg_color=0d1117" 
-                   alt="GitHub Stats" 
-                   class="cyber-iframe">
-              <br>
-              <img src="https://github-readme-streak-stats.herokuapp.com/?user=vicendominguez&theme=tokyonight&hide_border=true&background=0d1117" 
-                   alt="GitHub Streak" 
-                   class="cyber-iframe">
+              <h2>> EXPLOIT_DB_LATEST</h2>
+              <div class="cyber-feed" id="exploitdb-feed"></div>
             </section>
 
             <section class="cyber-section">
@@ -45,8 +33,20 @@
         <!-- Right Column -->
         <div class="cyber-column">
             <section class="cyber-section">
-              <h2>> EXPLOIT_DB_LATEST</h2>
-              <div class="cyber-feed" id="exploitdb-feed"></div>
+                <h2>> GITHUB_STATS</h2>
+              <a href="https://github.com/vicendominguez">
+                <img src="https://ghchart.rshah.org/00FFFF/vicendominguez" 
+                     alt="GitHub Contribution Chart" 
+                     class="cyber-iframe">
+              </a>
+              <br>
+              <img src="https://github-readme-stats-sigma-five.vercel.app/api?username=vicendominguez&show_icons=true&theme=tokyonight&hide_border=true&bg_color=0d1117" 
+                   alt="GitHub Stats" 
+                   class="cyber-iframe">
+              <br>
+              <img src="https://github-readme-streak-stats.herokuapp.com/?user=vicendominguez&theme=tokyonight&hide_border=true&background=0d1117" 
+                   alt="GitHub Streak" 
+                   class="cyber-iframe">
             </section>
 
             <section class="cyber-section">
@@ -68,8 +68,8 @@
     <script src="{{ "js/feed-parser.js" | relURL }}"></script>
     <script>
         document.addEventListener('DOMContentLoaded', function() {
-            loadFeed('http://github.com/vicendominguez.atom', 'github-feed');
-            loadFeed('http://www.kernel.org/feeds/kdist.xml', 'kernel-feed');
+            loadFeed('https://github.com/vicendominguez.atom', 'github-feed');
+            loadFeed('https://www.kernel.org/feeds/kdist.xml', 'kernel-feed');
             loadFeed('https://www.debian.org/News/news', 'debian-feed');
             loadFeed('https://www.exploit-db.com/rss.xml', 'exploitdb-feed');
         });
