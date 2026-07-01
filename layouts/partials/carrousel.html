@@ -75,6 +75,79 @@
                  <i class="devicon-redis-plain"></i>
                  <span class="text-xl">Redis</span>
              </div>
+             <!-- Duplicated set for seamless infinite scroll -->
+             <div class="carousel-item">
+                 <i class="devicon-bash-plain text-2xl"></i>
+                 <span class="text-xl">Bash</span>
+             </div>
+             <div class="carousel-item">
+                 <i class="devicon-git-plain text-2xl"></i>
+                 <span class="text-xl">Git</span>
+             </div>
+             <div class="carousel-item">
+                 <i class="devicon-apache-plain text-2xl"></i>
+                 <span class="text-xl">Apache</span>
+             </div>
+             <div class="carousel-item">
+                 <i class="devicon-linux-plain text-2xl"></i>
+                 <span class="text-xl">Linux</span>
+             </div>
+             <div class="carousel-item">
+                 <i class="devicon-debian-plain text-2xl"></i>
+                 <span class="text-xl">Debian</span>
+             </div>
+             <div class="carousel-item">
+                 <i class="devicon-terraform-plain-wordmark"></i>
+                 <span class="text-xl">Terraform</span>
+             </div>
+             <div class="carousel-item">
+                 <i class="devicon-amazonwebservices-plain-wordmark"></i>
+                 <span class="text-xl">AWS</span>
+             </div>
+             <div class="carousel-item">                        
+                 <i class="devicon-docker-plain"></i>                     
+                 <span class="text-xl">Docker</span>
+             </div>
+             <div class="carousel-item">                        
+                 <i class="devicon-go-plain"></i>                     
+                 <span class="text-xl">Go</span>
+             </div>
+             <div class="carousel-item">
+                 <i class="devicon-github-plain"></i>
+                 <span class="text-xl">Github</span>
+             </div>
+             <div class="carousel-item">
+                 <i class="devicon-gitlab-plain"></i>
+                 <span class="text-xl">Gitlab</span>
+             </div>
+             <div class="carousel-item">
+                 <i class="devicon-mysql-plain"></i>
+                 <span class="text-xl">MySQL</span>
+             </div>
+             <div class="carousel-item">
+                 <i class="devicon-neovim-plain text-2xl"></i>
+                 <span class="text-xl">Neovim</span>
+             </div>
+             <div class="carousel-item">
+                 <i class="devicon-nginx-plain-wordmark"></i>
+                 <span class="text-xl">Nginx</span>
+             </div>
+             <div class="carousel-item">
+                 <i class="devicon-firefox-plain text-2xl"></i>
+                 <span class="text-xl">Mozilla</span>
+             </div>
+             <div class="carousel-item">
+                 <i class="devicon-googlecloud-plain"></i>        
+                 <span class="text-xl">Google Cloud</span>
+             </div>
+             <div class="carousel-item">
+                 <i class="devicon-mongodb-plain text-2xl"></i>
+                 <span class="text-xl">MongoDB</span>
+             </div>
+             <div class="carousel-item">
+                 <i class="devicon-redis-plain"></i>
+                 <span class="text-xl">Redis</span>
+             </div>
          </div>
      </div>
   </div>
@@ -94,17 +167,10 @@
     margin-bottom: 0.5rem;
 }
 
-.carousel-track, .carousel-track-reverse {
+.carousel-track {
     display: flex;
     width: fit-content;
-}
-
-.carousel-track {
     animation: scroll 45s linear infinite;
-}
-
-.carousel-track-reverse {
-    animation: scroll-reverse 45s linear infinite;
 }
 
 .carousel-item {
@@ -127,8 +193,7 @@
     font-weight: 500;
 }
 
-.carousel-container:hover .carousel-track,
-.carousel-container:hover .carousel-track-reverse {
+.carousel-container:hover .carousel-track {
     animation-play-state: paused;
 }
 
@@ -137,86 +202,7 @@
         transform: translateX(0);
     }
     100% {
-        transform: translateX(calc(-100% / 2));
+        transform: translateX(-50%);
     }
-}
-
-@keyframes scroll-reverse {
-    0% {
-        transform: translateX(0);
-    }
-    100% {
-        transform: translateX(calc(-100% / 2));
-    }
-}
-
-.max-w-3xl {
-    border-color: rgba(75, 85, 99, 0.7); 
-}
-
-.project-card {
-    display: flex;
-    flex-direction: column;
-    box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06);
-    transition: all 0.5s cubic-bezier(0.4, 0, 0.2, 1);
-    background: linear-gradient(to bottom right, rgba(30, 41, 59, 0.5), rgba(30, 41, 59, 0.8));
-    backdrop-filter: blur(10px);
-}
-
-.project-card:hover {
-    transform: translateY(-5px);
-    box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.2), 0 10px 10px -5px rgba(0, 0, 0, 0.1);
-    border-color: rgba(59, 130, 246, 0.5);
-}
-@media (max-width: 767px) {
-    .project-card {
-        margin: 0 1rem; 
-    }
-    .aspect-w-16 {
-        padding-bottom: 75%; 
-    }
-}
-
-@media (min-width: 768px) {
-    .project-card:hover {
-        transform: translateY(-5px);
-        box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.2), 0 10px 10px -5px rgba(0, 0, 0, 0.1);
-        border-color: rgba(59, 130, 246, 0.5);
-    }
-}
-.aspect-w-16 {
-    position: relative;
-    padding-bottom: 56.25%;
-}
-
-.aspect-w-16 > img {
-    position: absolute;
-    height: 100%;
-    width: 100%;
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    object-fit: cover;
-    filter: saturate(1.1) contrast(1.1);
-}
-
-.line-clamp-2 {
-    display: -webkit-box;
-    -webkit-line-clamp: 2;
-    -webkit-box-orient: vertical;
-    overflow: hidden;
-}
-
-.blog-card {
-    transition: all 0.3s ease;
-}
-
-.blog-card:hover {
-    transform: translateX(4px);
-}
-
-footer {
-    background: linear-gradient(to bottom, transparent, rgba(17, 24, 39, 0.5));
 }
 </style>

@@ -1,6 +1,6 @@
 baseurl      = "https://vicendominguez.github.io/"
 title        = "VicenDominguez"
-languageCode = "en-us"
+defaultContentLanguage = "en"
 
 theme = 'hugo-theme-hello-friend-ng'
 enableRobotsTXT = true
@@ -38,7 +38,7 @@ about = "/about/"
   # Metadata mostly used in document's head
   description = "VicenDominguez blog"
   keywords = "homepage, personal, blog, tech, hack, cybersecurity, sysadmin, sre, linux, freebsd"
-  images = [""]
+  images = ["/images/vdom.jpg"]
 
 [caches]
   [caches.images]
@@ -63,6 +63,7 @@ about = "/about/"
 
 [languages]
   [languages.en]
+    locale = "en-US"
     keywords = ""
     copyright = '<a href="https://creativecommons.org/licenses/by-nc/4.0/" target="_blank" rel="noopener">CC BY-NC 4.0</a>'
     readOtherPosts = "Read other posts"
@@ -95,6 +96,7 @@ about = "/about/"
 
   # And you can even create generic menu
   [languages.es]
+    locale = "es-ES"
     keywords = ""
     copyright = '<a href="https://creativecommons.org/licenses/by-nc/4.0/" target="_blank" rel="noopener">CC BY-NC 4.0</a>'
     readOtherPosts = "Seguir leyendo..."
