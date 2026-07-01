@@ -17,11 +17,20 @@
             </section>
 
             <section class="cyber-section">
-                <h2>> DISTRIBUTED_COMPUTE</h2>
-              <a href="https://stats.free-dc.org/stats.php?page=userbycpid&cpid=54de5746ae97967e2f95bade7e5c257d"><img src="https://stats.free-dc.org/cpidtagb.php?cpid=54de5746ae97967e2f95bade7e5c257d&theme=3&cols=2" 
-                     alt="BOINC Stats" 
+                <h2>> GITHUB_STATS</h2>
+              <a href="https://github.com/vicendominguez">
+                <img src="https://ghchart.rshah.org/00FFFF/vicendominguez" 
+                     alt="GitHub Contribution Chart" 
                      class="cyber-iframe">
               </a>
+              <br>
+              <img src="https://github-readme-stats-sigma-five.vercel.app/api?username=vicendominguez&show_icons=true&theme=tokyonight&hide_border=true&bg_color=0d1117" 
+                   alt="GitHub Stats" 
+                   class="cyber-iframe">
+              <br>
+              <img src="https://github-readme-streak-stats.herokuapp.com/?user=vicendominguez&theme=tokyonight&hide_border=true&background=0d1117" 
+                   alt="GitHub Streak" 
+                   class="cyber-iframe">
             </section>
 
             <section class="cyber-section">
@@ -36,12 +45,10 @@
         <!-- Right Column -->
         <div class="cyber-column">
             <section class="cyber-section">
-                <div class="cyber-iframe">
-                    <a class="twitter-timeline" data-theme="dark" href="https://twitter.com/vicendominguez?ref_src=twsrc%5Etfw">Tweets by vicendominguez</a>
-                    <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
-                </div>
+              <h2>> EXPLOIT_DB_LATEST</h2>
+              <div class="cyber-feed" id="exploitdb-feed"></div>
             </section>
-            
+
             <section class="cyber-section">
               <i class="devicon-github-plain" style="font-size: 80px;"></i>
                 <div class="cyber-feed" id="github-feed"></div>
@@ -56,13 +63,6 @@
               <i class="devicon-debian-plain" style="font-size: 80px;"></i>
               <div class="cyber-feed" id="debian-feed"></div>
             </section>
-            
-<!--            
-            <section class="cyber-section">
-              <h2>> GITHUB_DEV_LANG</h2>
-              <img src="https://github-readme-stats.vercel.app/api/top-langs/?username=vicendominguez&layout=compact&theme=tokyonight" alt="Language Stats" class="cyber-iframe">
-            </section>
--->
         </div>
     <!-- Feed Parser -->
     <script src="{{ "js/feed-parser.js" | relURL }}"></script>
@@ -71,8 +71,8 @@
             loadFeed('http://github.com/vicendominguez.atom', 'github-feed');
             loadFeed('http://www.kernel.org/feeds/kdist.xml', 'kernel-feed');
             loadFeed('https://www.debian.org/News/news', 'debian-feed');
+            loadFeed('https://www.exploit-db.com/rss.xml', 'exploitdb-feed');
         });
     </script>
     </main>
 {{ end }}
-
